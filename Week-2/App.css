@@ -1,0 +1,12 @@
+.box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  margin: 8px;
+  text-align: center;
+}  
+
+#root{
+  display: flex;
+}
