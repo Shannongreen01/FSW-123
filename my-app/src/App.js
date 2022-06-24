@@ -1,11 +1,10 @@
 import './App.css';
-import ToDoList from './toDo';
+import ToDoList from './ToDoList';
+import { todo } from './Store';
 
 function App() {
   return (
-    <>
-      <ToDoList/>
-    </>
+      <ToDoList todoItems = {todo}/>
   );
 }
 
