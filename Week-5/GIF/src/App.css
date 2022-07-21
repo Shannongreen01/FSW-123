@@ -1,0 +1,19 @@
+.main {
+  background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Dragon_Ball_Cast.PNG/350px-Dragon_Ball_Cast.PNG");
+}
+
+.gif {
+  padding: 25px;
+  margin-left: 150px;
+  margin-top: 20px;
+  padding: 3px;
+  width: 700px;
+  border: solid;
+  background-color: aliceblue;
+}
+
+.input {
+ width: 150px;
+ margin-left: 400px;
+ margin-top: 40px;
+}
