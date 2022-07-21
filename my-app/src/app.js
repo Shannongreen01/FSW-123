@@ -26,12 +26,32 @@ function App() {
     setTodos(deleteTask);
   };
 
+  const addTodo = (input) => {
+    // Copies array of tasks.
+    let copyArray3 = [...toDos];
+    // Pushes new item into array. Adds id with uuid, text as input, isComplete false.
+    copyArray3.push({
+      text: input,
+      isCompleted: ''
+    });
+    // Adds to state of setTodos with other tasks.
+    setTodos(copyArray3);
+  };
+
+  const editTodo = (input, id) => {
+    //Copies array of tasks.
+    let copyArray4 = [...toDos];
+    let matchingId = copyArray4.find((task) => task.id === id);
+    matchingId.text = input;
+    setTodos(copyArray4)
+  };
+
 
   return (
     // Renders ToDoList component (imported). ToDoList component gets prop passed to it (state default array). Also passes complete and delete function
     <>
-      <ToDoList toDoList = {toDos} comp = {completeTodo} del = {deleteTodo}/>
-
+      
+      <ToDoList toDoList = {toDos} comp = {completeTodo} del = {deleteTodo} edit = {editTodo} add = {addTodo}/>
     </>
   );
 }
