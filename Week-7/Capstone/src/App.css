@@ -1,0 +1,72 @@
+body {
+    background-image: url("https://mcdn.wallpapersafari.com/medium/60/40/yAn3Ow.jpg");
+    background-color: black;
+    background-repeat: repeat;
+    background-size: 100%;
+    opacity: 1;
+}
+.flex-box{
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.header{
+	width: 100%;
+    height: 30px;
+	text-align: center;
+}
+
+.links{
+	color: white;
+	margin: 30px;
+    font-size: xx-large;
+}
+.links:hover{
+	color: red;
+}
+
+.search-box{
+	margin: 25px;
+	padding: 1px;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.image-container {
+position: relative;
+margin: 180px;
+}
+
+.image-container:hover {
+	cursor: pointer;
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: white;
+	width: fit-content;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
